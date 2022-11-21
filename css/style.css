@@ -1,0 +1,223 @@
+/* Font and General Elements */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  margin: 0px;
+  background-color: #000000;
+}
+
+@media screen and (min-width: 390px) {
+  
+  header > div {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+  }
+
+  /* Nav Bar */
+
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .fifty {
+    width: 15%;
+  }
+
+  .sixty {
+    width: 85%;
+    margin-left: 10px;
+  }
+
+  .morpheus {
+    width: 45px;
+    margin-right: 8.5rem;
+    margin-top: 4px;
+    margin-bottom: -3px;
+  }
+
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: black;
+  }
+  
+    /* Nav List */
+
+    header nav div ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    div#menu-list li a {
+      list-style: none;
+      text-decoration: none;
+      color: white;
+    }
+
+  /* Search Bar */
+
+  .searchBar {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    width: 95%;
+  }
+
+  .searchBar img {
+    position: absolute;
+    width: 25px;
+    margin-left: 10px;
+  }
+
+  .searchBar input {
+    width: 130%;
+    padding: 0px 20px;
+    border: 4px #008000;
+    color: #fff;
+    background-color: #0000000d;
+    position: left;
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    font-size: 15px;
+  }
+
+  .searchBar button {
+    width: 35%;
+    border: 0px;
+    background-color: #3fdb57;
+    color: #fff;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+  /* Main Section */
+
+  .main-page {
+    background-image: url(/img/thematrix.jpg);
+    background-size: cover;
+    color: #fff;
+    height: 83%;
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Container > Title */
+
+  .container {
+    height: 100%;
+  }
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 35px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .title {
+    height: 40%;
+  }
+
+  .title p {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 300;
+    text-align: center;
+    background-color: #0f0e0ecc;
+    padding: 15px;
+}
+  
+  /* Container > Buttons */
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons button {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 50px;
+    font-size: 25px;
+}
+
+  .bar-button-red-pill {
+    padding: 2px 15px;
+    text-decoration: none;
+    background-color: rgba(223, 79, 79, 0.8);
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+  }
+
+  .bar-button-red-pill svg {
+    width: 50px;
+    height: 30px;
+  }
+
+  .bar-button-blue-pill {
+    padding: 2px 15px;
+    text-decoration: none;
+    background-color: rgba(64, 96, 235, 0.8);
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+  }
+
+  .bar-button-blue-pill svg {
+    width: 50px;
+    height: 30px;
+  }
+
+  /* Container > Reference */
+
+  .reference {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 300;
+    text-align: left;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #0f0e0ecc;
+    height: 20%;
+  }
+
+  .reference p {
+    margin-top: 10px;
+  }
+  
+  div#platforms ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div#platforms li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  div#platforms li a svg {
+    width: 75px;
+    height: 120px;
+  }
+
+}
