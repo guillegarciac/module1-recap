@@ -54,8 +54,16 @@ console.log(changeItem([1, 1, 3, 2, 4, 1, 1], 1, 8)) // Should return [8, 8, 3, 
 /// Iteration 4: orderByDate
 
 function orderByDate (array) {
-
-}
+  const newArray = JSON.parse(JSON.stringify(array));
+  const sortedArray = newArray.sort((a,b) => {
+    if (a.year < b.year) {
+      return -1;
+    } else if (a.year > b.year) {
+      return 1;
+    } else { return 0}
+  })
+  return sortedArray;
+};
 
 const birthdays = [
   {
@@ -94,16 +102,40 @@ const importantDates = [
 console.log(orderByDate(birthdays)) // Should return them ordered 1979, 1988, 1989, 1990
 console.log(orderByDate(importantDates)) // Should return them ordered 2013, 2014, 2019
 
-
 /// Iteration 5: new machine gun
+class Weapon {
+  constructor (type, power, ammo = 10) {
+    this.type = type;
+    this.power = power;
+    this.ammo = ammo;
+    this.interval = this.interval;
+  }
 
-/* Your code goes here */
+  shoot() {
+    this.interval = setInterval(() => {
+      if (this.ammo > 0) {
+        this.ammo--;
+        console.log(this.ammo)
+      }
+    }, 30)
+  }
+
+  stopShooting() {
+    clearInterval(this.interval)
+  }
+
+  reload(num) {
+    this.ammo = this.ammo + num;
+    console.log(this.ammo)
+    }
+}
 
 /// Iteration 5 tests
 const machineGun = new Weapon('Machine gun', 90, 50);
 console.log('Begin:')
 machineGun.shoot();
 setTimeout(() => machineGun.stopShooting(), 1000);
-setTimeout(() => machineGun.reload(35), 1500);
+setTimeout(() => machineGun.reload(35), 2000);
+
 
 
