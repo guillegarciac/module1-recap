@@ -38,11 +38,19 @@ body, html {
     margin-left: 10px;
   }
 
+  .seventy {
+    display: none;
+  }
+
   .morpheus {
     width: 45px;
     margin-right: 8.5rem;
     margin-top: 4px;
     margin-bottom: -3px;
+  }
+
+  #menu-icons{
+    display: none;
   }
 
   .sticky {
@@ -146,6 +154,12 @@ body, html {
   
   /* Container > Buttons */
 
+  #menu-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   .buttons {
     display: flex;
     flex-direction: column;
@@ -218,6 +232,228 @@ body, html {
   div#platforms li a svg {
     width: 75px;
     height: 120px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+    background-color: #000;
+  }
+
+  header > div {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+    justify-content: space-between;
+  }
+
+  .fifty {
+    width: 30%;
+  }
+
+  .searchBar {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .searchBar button {
+    width: 35%;
+    border: 0px;
+    background-color: #3fdb57;
+    color: #fff;
+    height: 36px;
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+  }
+
+  .searchBar input {
+    width: 137%;
+    padding: 0px 22px;
+    height: 35px;
+    border: 4px #008000;
+    color: #fff;
+    background-color: #0000000d;
+    position: left;
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 35px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 25px;
+  }
+
+  .title p {
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 300;
+    text-align: center;
+    background-color: #0f0e0ecc;
+    padding: 10px;
+  }
+
+  .buttons button {
+    width: 33%;
+    padding: 15px;
+    margin: 10px 50px;
+    font-size: 30px;
+  }
+
+  div#platforms ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  div#platforms li a svg {
+    width: 115px;
+    height: 150px;
+  }
+
+  .reference p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+  
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: #000;
+  }
+
+  header > div {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+    justify-content: space-between;
+    height: 51px;
+  }
+
+  .searchBar button {
+    width: 15%;
+    border: 0px;
+    background-color: #3fdb57;
+    color: #fff;
+    height: 36px;
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+  }
+
+  .sixty {
+    width: 32%;
+    margin-left: -950px;
+}
+
+  .seventy {
+    display: block;
+    width: 18%;
+  }
+
+  .buttons {
+    display: block;
+    margin-left: 60px;
+  }
+
+  .buttons button {
+    width: 14%;
+    padding: 15px;
+    font-size: 20px;
+    margin: 0px 0px 20px 60px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 30px;
+    padding: 5px;
+    width: 35%;
+  }
+
+  .title {
+    height: 35%;
+  }
+  .title p {
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 300;
+    text-align: center;
+    background-color: #0f0e0ecc;
+    padding: 50px;
+    margin: 0px 100px;
+  }
+
+  .reference {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 300;
+    text-align: left;
+    padding: 10px;
+    width: 35%;
+    margin-top: 10px;
+    background-color: #0f0e0ecc;
+    height: 17%;
+    margin-left: 100px;
+  }
+
+  .searchBar input {
+    width: 137%;
+    padding: 0px 52px;
+    height: 35px;
+    border: 4px #008000;
+    color: #fff;
+    background-color: #0000000d;
+    position: left;
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    font-size: 20px;
+  }
+
+  div#platforms ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  div#platforms li a svg {
+    width: 60px;
+    height: 110px;
+  }
+
+  div.seventy ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  div.seventy ul li {
+    padding: 20px;
+  }
+
+  div.seventy li a svg {
+    width: 30px;
+    height: 50px;
   }
 
 }
